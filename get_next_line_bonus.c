@@ -6,7 +6,7 @@
 /*   By: aattak <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 11:47:24 by aattak            #+#    #+#             */
-/*   Updated: 2023/12/31 14:12:44 by aattak           ###   ########.fr       */
+/*   Updated: 2024/01/01 14:36:57 by aattak           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*get_next_line(int fd)
 	int			nl;
 	ssize_t		r_len;
 	char		*line;
-	static char	buffer[OPEN_MAX][BUFFER_SIZE + 1] = {""};
+	static char	buffer[OPEN_MAX][BUFFER_SIZE + 1];
 
 	if (fd < 0)
 		return (NULL);
